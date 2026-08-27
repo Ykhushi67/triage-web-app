@@ -1,0 +1,42 @@
+.audit-filters-row {
+  display: flex;
+  gap: var(--space-4);
+  flex-wrap: wrap;
+}
+
+.audit-search-box {
+  flex: 1;
+  min-width: 260px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.pl-8 {
+  padding-left: var(--space-8) !important;
+}
+
+.search-icon,
+.filter-icon {
+  position: absolute;
+  left: var(--space-3);
+  pointer-events: none;
+}
+
+.audit-select-box {
+  min-width: 240px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.dpdp-strip-note {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-size: var(--font-size-xs);
+  color: var(--text-secondary);
+  background: var(--bg-secondary);
+  padding: var(--space-2) var(--space-3);
+  border-radius: var(--radius-sm);
+}

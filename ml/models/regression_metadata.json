@@ -1,0 +1,50 @@
+{
+  "model_name": "Triage Priority Score Regressor",
+  "model_version": "triage-v1.0",
+  "algorithm": "XGBoost Regressor",
+  "target": "triage_priority_score [0-10]",
+  "feature_count": 123,
+  "feature_names": [
+    "age_clean",
+    "age_missing",
+    "age_under_18",
+    "age_elderly",
+    "is_male",
+    "is_female",
+    "temperature_clean",
+    "temp_missing",
+    "fever_high",
+    "hypothermia",
+    "temp_deviation",
+    "heart_rate_clean",
+    "hr_missing",
+    "tachycardia_severe",
+    "tachycardia_mild",
+    "bradycardia",
+    "bp_systolic_clean",
+    "bp_diastolic_clean",
+    "bp_missing",
+    "pulse_pressure",
+    "shock_index",
+    "hypotension",
+    "hypertension_stage2",
+    "spo2_clean",
+    "spo2_missing",
+    "hypoxia_severe",
+    "hypoxia_moderate",
+    "word_abdominal",
+    "word_abdominal pain",
+    "word_ache"
+  ],
+  "training_records": 2320,
+  "test_metrics": {
+    "mae": 0.501,
+    "rmse": 0.7978,
+    "r2": 0.9009
+  },
+  "triage_tiers": {
+    "Level 1 CRITICAL": "Score >= 7.0",
+    "Level 2 MODERATE": "Score 4.0 \u2013 6.9",
+    "Level 3 LOW": "Score < 4.0"
+  }
+}

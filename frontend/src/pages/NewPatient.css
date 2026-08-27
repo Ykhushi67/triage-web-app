@@ -1,0 +1,156 @@
+.intake-stepper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-4) var(--space-8);
+}
+
+.step-node {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  color: var(--text-muted);
+}
+
+.step-num {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-default);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-bold);
+}
+
+.step-label {
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-semibold);
+}
+
+.step-active {
+  color: var(--color-primary);
+}
+.step-active .step-num {
+  background: var(--color-primary);
+  color: #fff;
+  border-color: var(--color-primary);
+}
+
+.step-done {
+  color: var(--color-stable);
+}
+.step-done .step-num {
+  background: var(--color-stable);
+  color: #fff;
+  border-color: var(--color-stable);
+}
+
+.step-connector {
+  flex: 1;
+  height: 2px;
+  background: var(--border-subtle);
+  margin: 0 var(--space-4);
+}
+
+.intake-form-card {
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+.symptom-chips-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}
+
+.symptom-chip {
+  padding: 6px var(--space-3);
+  border-radius: var(--radius-full);
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-medium);
+  background: var(--bg-secondary);
+  color: var(--text-primary);
+  border: 1px solid var(--border-default);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.symptom-chip:hover {
+  background: var(--color-primary-subtle);
+  border-color: var(--color-primary);
+  color: var(--color-primary);
+}
+
+.chip-selected {
+  background: var(--color-primary);
+  color: #fff;
+  border-color: var(--color-primary);
+  font-weight: var(--font-weight-bold);
+}
+
+.safety-check-box {
+  background: var(--color-critical-bg);
+  border: 1px solid var(--color-critical-border);
+  border-radius: var(--radius-md);
+  padding: var(--space-4);
+}
+
+.red-flags-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-2);
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-medium);
+  color: #991B1B;
+  cursor: pointer;
+}
+
+.ai-processing-card {
+  max-width: 600px;
+  margin: var(--space-8) auto;
+  text-align: center;
+}
+
+.ai-processing-steps {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  text-align: left;
+  margin-top: var(--space-4);
+  font-size: var(--font-size-sm);
+}
+
+.ai-p-step {
+  color: var(--text-muted);
+}
+.ai-p-step.done {
+  color: var(--color-stable);
+  font-weight: var(--font-weight-medium);
+}
+.ai-p-step.active {
+  color: var(--color-primary);
+  font-weight: var(--font-weight-bold);
+}
+
+@media (max-width: 768px) {
+  .intake-stepper {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-2);
+  }
+  .step-connector {
+    display: none;
+  }
+  .red-flags-grid {
+    grid-template-columns: 1fr;
+  }
+}

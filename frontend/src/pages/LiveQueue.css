@@ -1,0 +1,186 @@
+.queue-summary-strip {
+  display: flex;
+  gap: var(--space-3);
+  flex-wrap: wrap;
+}
+
+.summary-pill {
+  flex: 1;
+  min-width: 130px;
+  background: var(--bg-card);
+  border: 1px solid var(--border-default);
+  border-radius: var(--radius-lg);
+  padding: var(--space-3) var(--space-4);
+  display: flex;
+  flex-direction: column;
+  box-shadow: var(--shadow-sm);
+}
+
+.pill-val {
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-extrabold);
+  color: var(--text-primary);
+}
+
+.pill-lbl {
+  font-size: 11px;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  font-weight: var(--font-weight-semibold);
+  letter-spacing: 0.04em;
+}
+
+.pill-critical {
+  border-color: var(--color-critical-border);
+  background: var(--color-critical-bg);
+}
+.pill-critical .pill-val {
+  color: var(--color-critical);
+}
+
+.pill-moderate {
+  border-color: var(--color-moderate-border);
+  background: var(--color-moderate-bg);
+}
+.pill-moderate .pill-val {
+  color: #B45309;
+}
+
+.pill-stable {
+  border-color: var(--color-stable-border);
+  background: var(--color-stable-bg);
+}
+.pill-stable .pill-val {
+  color: var(--color-stable);
+}
+
+.queue-controls-card {
+  padding: var(--space-4);
+}
+
+.queue-filters-row {
+  display: flex;
+  gap: var(--space-4);
+  flex-wrap: wrap;
+}
+
+.queue-search-box {
+  flex: 1;
+  min-width: 260px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.search-icon {
+  position: absolute;
+  left: var(--space-3);
+  color: var(--text-muted);
+}
+
+.queue-search-input {
+  width: 100%;
+  height: 42px;
+  padding: 0 var(--space-8) 0 var(--space-8);
+  border: 1px solid var(--border-default);
+  border-radius: var(--radius-md);
+  font-size: var(--font-size-base);
+  outline: none;
+  background: #fff;
+  transition: all var(--transition-fast);
+}
+
+.queue-search-input:focus {
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px rgba(109, 74, 255, 0.12);
+}
+
+.search-clear-btn {
+  position: absolute;
+  right: var(--space-3);
+  background: none;
+  border: none;
+  font-size: var(--font-size-lg);
+  color: var(--text-muted);
+  cursor: pointer;
+}
+
+.dept-filter-box {
+  position: relative;
+  display: flex;
+  align-items: center;
+  min-width: 280px;
+}
+
+.dept-icon {
+  position: absolute;
+  left: var(--space-3);
+  pointer-events: none;
+}
+
+.dept-select {
+  width: 100%;
+  height: 42px;
+  padding: 0 var(--space-4) 0 var(--space-8);
+  border: 1px solid var(--border-default);
+  border-radius: var(--radius-md);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-semibold);
+  color: var(--text-primary);
+  background: #fff;
+  cursor: pointer;
+  outline: none;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath fill='%236B6875' d='M1 1l5 5 5-5'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+}
+
+.dept-select:focus {
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px rgba(109, 74, 255, 0.12);
+}
+
+.priority-tabs-row {
+  display: flex;
+  gap: var(--space-2);
+  flex-wrap: wrap;
+}
+
+.p-tab {
+  padding: 6px var(--space-3);
+  border-radius: var(--radius-md);
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-semibold);
+  background: var(--bg-secondary);
+  color: var(--text-secondary);
+  border: 1px solid var(--border-default);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.p-tab:hover {
+  background: var(--border-subtle);
+  color: var(--text-primary);
+}
+
+.p-tab-active {
+  background: var(--color-primary) !important;
+  color: #fff !important;
+  border-color: var(--color-primary) !important;
+}
+
+.p-tab-critical.p-tab-active {
+  background: var(--color-critical) !important;
+  border-color: var(--color-critical) !important;
+}
+
+.p-tab-moderate.p-tab-active {
+  background: var(--color-high) !important;
+  border-color: var(--color-high) !important;
+}
+
+.p-tab-stable.p-tab-active {
+  background: var(--color-stable) !important;
+  border-color: var(--color-stable) !important;
+}

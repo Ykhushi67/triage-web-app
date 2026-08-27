@@ -1,0 +1,95 @@
+.confidence-indicator-card {
+  padding: var(--space-4);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border-default);
+  background: var(--bg-card);
+  margin-top: var(--space-3);
+  margin-bottom: var(--space-3);
+}
+
+.confidence-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--space-2);
+}
+
+.confidence-label {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-semibold);
+  color: var(--text-secondary);
+}
+
+.confidence-value {
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-bold);
+  color: var(--text-primary);
+}
+
+.confidence-bar-bg {
+  height: 8px;
+  background: var(--border-subtle);
+  border-radius: var(--radius-full);
+  overflow: hidden;
+  margin-bottom: var(--space-2);
+}
+
+.confidence-bar-fill {
+  height: 100%;
+  border-radius: var(--radius-full);
+  transition: width 0.4s ease;
+}
+
+.confidence-high .confidence-bar-fill {
+  background: var(--color-stable);
+}
+.confidence-high .confidence-status-badge {
+  color: var(--color-stable);
+}
+
+.confidence-med .confidence-bar-fill {
+  background: var(--color-moderate);
+}
+.confidence-med .confidence-status-badge {
+  color: #B45309;
+}
+
+.confidence-low .confidence-bar-fill {
+  background: var(--color-critical);
+}
+.confidence-low .confidence-status-badge {
+  color: var(--color-critical);
+  font-weight: var(--font-weight-bold);
+}
+
+.confidence-status-badge {
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-semibold);
+  letter-spacing: 0.05em;
+}
+
+.confidence-missing-flags {
+  margin-top: var(--space-3);
+  padding: var(--space-2) var(--space-3);
+  background: var(--color-moderate-bg);
+  border: 1px solid var(--color-moderate-border);
+  border-radius: var(--radius-md);
+  font-size: var(--font-size-xs);
+  color: #78350F;
+}
+
+.flags-title {
+  font-weight: var(--font-weight-semibold);
+  margin-bottom: 2px;
+}
+
+.flags-list {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}

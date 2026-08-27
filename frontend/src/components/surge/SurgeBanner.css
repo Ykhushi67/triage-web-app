@@ -1,0 +1,66 @@
+.surge-banner {
+  background: linear-gradient(135deg, #D92D20 0%, #B91C1C 100%);
+  color: #fff;
+  padding: var(--space-2) var(--space-6);
+  flex-shrink: 0;
+  z-index: 200;
+  animation: surgeBannerPulse 3s ease-in-out infinite;
+}
+
+.surge-banner-inner {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.surge-banner-icon {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.surge-banner-text {
+  flex: 1;
+  font-size: var(--font-size-sm);
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  flex-wrap: wrap;
+}
+
+.surge-banner-stats {
+  opacity: 0.8;
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-regular);
+}
+
+.surge-banner-deactivate {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: 5px var(--space-3);
+  background: rgba(255,255,255,0.15);
+  border: 1px solid rgba(255,255,255,0.3);
+  border-radius: var(--radius-full);
+  color: #fff;
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-semibold);
+  cursor: pointer;
+  transition: background var(--transition-fast);
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.surge-banner-deactivate:hover:not(:disabled) {
+  background: rgba(255,255,255,0.25);
+}
+
+.surge-banner-deactivate:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+@keyframes surgeBannerPulse {
+  0%, 100% { background: linear-gradient(135deg, #D92D20 0%, #B91C1C 100%); }
+  50% { background: linear-gradient(135deg, #B91C1C 0%, #991B1B 100%); }
+}

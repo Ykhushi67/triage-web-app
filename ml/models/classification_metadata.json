@@ -1,0 +1,20 @@
+{
+  "model_name": "Department Recommendation Classifier",
+  "model_version": "dept-v1.0",
+  "algorithm": "XGBoost Classifier",
+  "target": "canonical_department",
+  "classes": [
+    "Cardiology",
+    "ENT",
+    "Emergency",
+    "Gastroenterology",
+    "General Medicine",
+    "Neurology",
+    "Pulmonology"
+  ],
+  "training_records": 2207,
+  "test_metrics": {
+    "accuracy": 0.5307,
+    "weighted_f1": 0.5231
+  }
+}
