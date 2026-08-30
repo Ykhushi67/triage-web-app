@@ -7,7 +7,6 @@
 
 ###  Live Demo & Deployment Links
 * **Live Web Application:** [https://triage-web-app.vercel.app](https://triage-web-app.vercel.app)
-* **Backend API Docs (Swagger):** [https://patient-triage-backend.onrender.com/docs](https://triage-web-app.onrender.com))
 
 
 ## Table of Contents
