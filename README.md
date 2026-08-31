@@ -5,8 +5,7 @@
 
 ---
 
-###  Live Demo & Deployment Links
-* **Live Web Application:** [https://triage-web-app.vercel.app](https://triage-web-app.vercel.app)
+###  Live Demo: [https://triage-web-app.vercel.app](https://triage-web-app.vercel.app)
 
 
 ## Table of Contents
