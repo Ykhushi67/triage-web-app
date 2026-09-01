@@ -1,0 +1,140 @@
+# ====================================================================
+# Environment & Secrets (NEVER COMMIT SENSITIVE DATA)
+# ====================================================================
+.env
+.env.*
+*.env
+!.env.example
+secrets.json
+*.pem
+*.key
+*.cert
+*.crt
+
+# ====================================================================
+# Python & Bytecode Caches
+# ====================================================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# ====================================================================
+# Python Virtual Environments
+# ====================================================================
+venv/
+.venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+conda/
+.conda/
+
+# ====================================================================
+# Testing & Code Coverage
+# ====================================================================
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.tox/
+.nox/
+.ruff_cache/
+.mypy_cache/
+
+# ====================================================================
+# Databases & Local Data Stores
+# ====================================================================
+*.sqlite3
+*.sqlite
+*.db
+*.db-journal
+patient_triage.db
+
+# ====================================================================
+# Machine Learning & Notebooks
+# ====================================================================
+.ipynb_checkpoints/
+ml/runs/
+ml/logs/
+ml/checkpoints/
+*.checkpoint
+wandb/
+
+# ====================================================================
+# Node.js & Frontend (Vite / React)
+# ====================================================================
+node_modules/
+frontend/node_modules/
+frontend/dist/
+frontend/dist-ssr/
+frontend/build/
+.eslintcache
+.parcel-cache
+
+# ====================================================================
+# Logs
+# ====================================================================
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# ====================================================================
+# IDEs & Code Editors
+# ====================================================================
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.idea/
+*.sublime-workspace
+*.sublime-project
+*.swp
+*.swo
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# ====================================================================
+# Operating System Artifacts
+# ====================================================================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+*.tmp
+*.temp
