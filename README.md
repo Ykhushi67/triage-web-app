@@ -49,7 +49,7 @@ PatientTriage.ai **does not replace doctors or nurses**. It serves as an assisti
 - **ML Inference:** Consumes **strictly acute vital signs and current presentation**. Historical records are physically isolated from the feature matrix to eliminate diagnostic bias.
 
 ### Safety Rule Hard Floors
-- **SpO₂ Hypoxemia Floor:** Any patient with $\text{SpO}_2 < 90\%$ is forced into **Level 1 Critical** ($\text{Score} \ge 8.5$) with mandatory emergency escalation regardless of raw ML model scores.
+- **SpO₂ Hypoxemia Floor:** Any patient with $\text{SpO}_2 < 90\%$ is forced into **Level 1 Critical** ($\text{Score} \ge 8.5$) with the mandatory emergency escalation regardless of raw ML model scores.
 - **Haemodynamic Shock Floor:** $\text{Shock Index} = \frac{\text{Heart Rate}}{\text{Systolic BP}} \ge 1.0$ triggers immediate **Level 1 Critical** ($\text{Score} \ge 7.5$).
 
 ### Explicit Uncertainty Engine
